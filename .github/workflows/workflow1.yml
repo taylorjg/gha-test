@@ -1,0 +1,9 @@
+name: Workflow 1
+on: workflow_dispatch
+
+jobs:
+  job_1:
+    name: Job 1
+    runs-on: ubunto-latest
+    steps:
+      - run: echo step 1
