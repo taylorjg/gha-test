@@ -1,9 +1,15 @@
 name: Workflow 2
-on: workflow_call
+
+on:
+  workflow_call:
+    inputs:
+      message:
+        required: true
+        type: string
 
 jobs:
   job_a:
     name: Job A
     runs-on: ubuntu-latest
     steps:
-      - run: echo [workflow2] step 1
+      - run: echo "[workflow2] step 1 ${{ github.event.inputs.message }}"
