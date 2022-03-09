@@ -4,6 +4,6 @@ on: workflow_dispatch
 jobs:
   job_1:
     name: Job 1
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - run: echo step 1
