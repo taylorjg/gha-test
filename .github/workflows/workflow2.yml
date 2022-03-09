@@ -12,4 +12,4 @@ jobs:
     name: Job A
     runs-on: ubuntu-latest
     steps:
-      - run: echo "[workflow2] step 1 ${{ github.event.inputs.message }}"
+      - run: echo "[workflow2] step 1 ${{ inputs.message }}"
