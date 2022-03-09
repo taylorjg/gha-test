@@ -6,4 +6,6 @@ jobs:
     name: Job 1
     runs-on: ubuntu-latest
     steps:
-      - run: echo step 1
+      - run: echo [workflow1] step 1
+  job_2:
+    uses: ./.github/workflows/workflow2.yml

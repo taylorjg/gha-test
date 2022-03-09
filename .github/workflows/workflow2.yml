@@ -1,0 +1,9 @@
+name: Workflow 2
+on: workflow_run
+
+jobs:
+  job_a:
+    name: Job A
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo [workflow2] step 1
